@@ -12,6 +12,9 @@ load_dotenv()
 agent_id = os.getenv("AGENT_ID")
 api_key = os.getenv("ELEVENLABS_API_KEY")
 
+print(f"DEBUG: AGENT_ID={agent_id}")
+print(f"DEBUG: ELEVENLABS_API_KEY={'SET' if api_key else 'NOT SET'}")
+
 client = ElevenLabs(api_key=api_key)
 
 conversation = Conversation(
