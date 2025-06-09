@@ -30,7 +30,7 @@ conversation = Conversation(
     callback_agent_response_correction=lambda original, corrected: print(f"Agent: {original} -> {corrected}"),
     callback_user_transcript=lambda transcript: print(f"User: {transcript}"),
 
-    # Uncomment if you want to see latency measurements.
+    # Uncomment if you want to see latency measurements. 
     # callback_latency_measurement=lambda latency: print(f"Latency: {latency}ms"),
 )
 
