@@ -30,9 +30,9 @@ conversation = Conversation(
     audio_interface=DefaultAudioInterface(),
 
     # Simple callbacks that print the conversation to the console.
-    callback_agent_response=lambda response: print(f"Agent: {response}"),
-    callback_agent_response_correction=lambda original, corrected: print(f"Agent: {original} -> {corrected}"),
-    callback_user_transcript=lambda transcript: print(f"User: {transcript}"),
+    callback_agent_response=lambda response: print(f"Jarvis: {response}"),
+    callback_agent_response_correction=lambda original, corrected: print(f"Jarvis: {original} -> {corrected}"),
+    callback_user_transcript=lambda transcript: print(f"Me: {transcript}"),
 
     # Uncomment if you want to see latency measurements. 
     # callback_latency_measurement=lambda latency: print(f"Latency: {latency}ms"),
